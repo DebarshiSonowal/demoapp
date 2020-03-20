@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">demoapp</string>
+    <string name="google_maps_key">AIzaSyA1DmbSIUUAJaMlf2d34Pi-tuFKUW0t_mg</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_mapone">Map</string>
+    <string name="clear">clear</string>
+    <string name="mark_location"> Mark Location</string>
+    <string name="save">Save</string>
+</resources>
