@@ -7,15 +7,23 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class MessageFragment extends Fragment {
+
+    //Variables
     ListView mListView;
     EditText mEditText;
     Button mButton;
+    DatabaseReference root;
+    String ab;
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -28,5 +36,14 @@ public class MessageFragment extends Fragment {
     mButton = mButton.findViewById(R.id.bt_save);
     mEditText = mEditText.findViewById(R.id.ed_msg);
     mListView = mListView.findViewById(R.id.ls_msg);
+
+    root = FirebaseDatabase.getInstance().getReference();
+
+    mButton.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            ab =
+        }
+    });
     }
 }
