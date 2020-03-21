@@ -7,4 +7,9 @@
     <string name="clear">clear</string>
     <string name="mark_location"> Mark Location</string>
     <string name="save">Save</string>
+    <string-array name="messages">
+        <item>Can\'t talk right now</item>
+        <item>I am in a meeting</item>
+        <item>I am busy right now will call you later</item>
+    </string-array>
 </resources>
