@@ -83,7 +83,12 @@ public class MessageFragment extends Fragment {
         mSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                MessageFragment messageFragment = new MessageFragment();
+                Bundle args = new Bundle();
+                args.putString("Current Message",mSpinner.getSelectedItem().toString());
+                messageFragment.setArguments(args);
 
+                getFragmentManager().beginTransaction().add(R.id.fragment_container,messageFragment).commit();
             }
 
             @Override
